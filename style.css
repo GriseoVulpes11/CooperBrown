@@ -11,11 +11,28 @@ body, html {
 }
 
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG_2859(1).jpg");
+.index-hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG_3062.jpg");
     overflow: hidden;
     width: 100vw;
     height: 98vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.about-hero-image {
+    background: linear-gradient(rgb(51, 51, 51), rgb(17, 17, 17));
+    overflow: hidden;
+    width: 100vw;
+    height: 10vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,4 +64,83 @@ body, html {
 }
 .hero-text a:hover {
     background: rgba(0,0,0,0.73);
+}
+
+.topNav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.topNav a.topNavActive {
+    background-color: #111111;
+    color: white;
+}
+
+.LeftDivAbout {
+    width: 40%;
+    height: 80vh;
+    float: left;
+    outline: 5px solid #ab7501;
+    outline-offset: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.RightDivAbout {
+    width: 40%;
+    height: 80vh;
+    float: right;
+    background-color: aqua;
+    outline-offset: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    position: center;
+}
+.columnLeft{
+    float: left;
+    width: 50%;
+    height: 80vh;
+    float: left;
+    outline: 5px solid #ab7501;
+    outline-offset: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.columnRight{
+    float: right;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.AboutTitle{
+    text-align: center;
 }
